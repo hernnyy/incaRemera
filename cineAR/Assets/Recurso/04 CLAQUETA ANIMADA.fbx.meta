@@ -84,6 +84,7 @@ ModelImporter:
     4300020: Mesh11
     7400000: C4D Animation Take
     9500000: //RootNode
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -102,9 +103,81 @@ ModelImporter:
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
-    animationWrapMode: 0
+    animationWrapMode: 2
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: C4D Animation Take
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: _APOYOINCAA1
+        weight: 1
+      - path: _APOYOINCAA1/Mesh4
+        weight: 1
+      - path: _DEFIENDOCINEARG_1_1
+        weight: 1
+      - path: _DEFIENDOCINEARG_1_1/Mesh5
+        weight: 1
+      - path: _YOAPOYOENERC1
+        weight: 1
+      - path: _YOAPOYOENERC1/Mesh6
+        weight: 1
+      - path: ESCENA_PLANO_TOM1
+        weight: 1
+      - path: ESCENA_PLANO_TOM1/Mesh2
+        weight: 1
+      - path: FECHA_D_A_NOCHE_1
+        weight: 1
+      - path: FECHA_D_A_NOCHE_1/Mesh3
+        weight: 1
+      - path: G_1_1
+        weight: 1
+      - path: G_1_1/Mesh7
+        weight: 1
+      - path: G_3_1
+        weight: 1
+      - path: G_3_1/Mesh9
+        weight: 1
+      - path: G_7_1
+        weight: 1
+      - path: G_7_1/Mesh8
+        weight: 1
+      - path: G_13_04_2017_1
+        weight: 1
+      - path: G_13_04_2017_1/Mesh10
+        weight: 1
+      - path: Mesh11
+        weight: 1
+      - path: T_TULO_PRODUCCI_1
+        weight: 1
+      - path: T_TULO_PRODUCCI_1/Mesh1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -146,7 +219,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
