@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb521e9ace49d8546a83f420a0debd12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_strFileName: EasyMovieTexture.mp4
+  m_strFileName: 456173794d6f766965546578747572652e6d7034
   m_TargetMaterial: {fileID: 137217736}
   m_bFullScreen: 0
   m_bSupportRockchip: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb521e9ace49d8546a83f420a0debd12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_strFileName: ed_1024_512kb.mp4
+  m_strFileName: 65645f313032345f3531326b622e6d7034
   m_TargetMaterial: {fileID: 859227842}
   m_bFullScreen: 0
   m_bSupportRockchip: 0

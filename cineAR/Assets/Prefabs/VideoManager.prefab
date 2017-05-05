@@ -93,9 +93,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_strFileName: ed_1024_512kb.mp4
   m_TargetMaterial: {fileID: 1458493261076830}
-  m_bFullScreen: 1
+  m_bFullScreen: 0
   m_bSupportRockchip: 1
   m_ScaleValue: 0
   m_objResize: {fileID: 1458493261076830}
   m_bLoop: 1
-  m_bAutoPlay: 1
+  m_bAutoPlay: 0
