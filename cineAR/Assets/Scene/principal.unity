@@ -709,7 +709,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &18
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,7 +1017,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &36
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,6 +1131,7 @@ GameObject:
   - component: {fileID: 115}
   - component: {fileID: 141}
   - component: {fileID: 140}
+  - component: {fileID: 142}
   m_Layer: 0
   m_Name: ARCamera
   m_TagString: Untagged
@@ -1630,7 +1631,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 2500
+  far clip plane: 10500
   field of view: 30.8
   orthographic: 0
   orthographic size: 5
@@ -2450,7 +2451,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465783, g: 0.49641263, b: 0.5748168, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657922, g: 0.4964134, b: 0.5748175, a: 1}
 --- !u!108 &118
 Light:
   m_ObjectHideFlags: 0
@@ -2569,7 +2570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objects: []
+  mediaPlayerCtrl: {fileID: 0}
 --- !u!114 &124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2629,7 +2630,7 @@ MonoBehaviour:
   m_bSupportRockchip: 1
   m_ScaleValue: 0
   m_objResize: {fileID: 17}
-  m_bLoop: 1
+  m_bLoop: 0
   m_bAutoPlay: 1
 --- !u!114 &127
 MonoBehaviour:
@@ -2643,7 +2644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objects: []
+  mediaPlayerCtrl: {fileID: 0}
 --- !u!114 &128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2703,7 +2704,7 @@ MonoBehaviour:
   m_bSupportRockchip: 1
   m_ScaleValue: 0
   m_objResize: {fileID: 22}
-  m_bLoop: 1
+  m_bLoop: 0
   m_bAutoPlay: 1
 --- !u!114 &131
 MonoBehaviour:
@@ -2717,7 +2718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objects: []
+  mediaPlayerCtrl: {fileID: 0}
 --- !u!114 &132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2771,7 +2772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objects: []
+  mediaPlayerCtrl: {fileID: 0}
 --- !u!114 &135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2827,11 +2828,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_strFileName: 02 cine argentino.mp4
   m_TargetMaterial: {fileID: 35}
-  m_bFullScreen: 1
+  m_bFullScreen: 0
   m_bSupportRockchip: 1
   m_ScaleValue: 0
   m_objResize: {fileID: 35}
-  m_bLoop: 1
+  m_bLoop: 0
   m_bAutoPlay: 1
 --- !u!114 &138
 MonoBehaviour:
@@ -2888,6 +2889,18 @@ MonoBehaviour:
   mPrimaryCamera: {fileID: 0}
   mSecondaryCamera: {fileID: 0}
   mWereBindingFieldsExposed: 0
+--- !u!114 &142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 42}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95c82fb56587ab649b86288b26f7c0f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  video1: {fileID: 22}
 --- !u!1 &359720785
 GameObject:
   m_ObjectHideFlags: 0

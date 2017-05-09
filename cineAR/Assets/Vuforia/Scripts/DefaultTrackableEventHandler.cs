@@ -8,14 +8,16 @@ using UnityEngine;
 
 namespace Vuforia
 {
+        
     /// <summary>
     /// A custom handler that implements the ITrackableEventHandler interface.
     /// </summary>
     public class DefaultTrackableEventHandler : MonoBehaviour,
                                                 ITrackableEventHandler
     {
+        public MediaPlayerCtrl mediaPlayerCtrl;
         #region PRIVATE_MEMBER_VARIABLES
-		public GameObject[] _objects;
+		//public GameObject[] _objects;
         private TrackableBehaviour mTrackableBehaviour;
     
         #endregion // PRIVATE_MEMBER_VARIABLES
@@ -31,9 +33,7 @@ namespace Vuforia
             {
                 mTrackableBehaviour.RegisterTrackableEventHandler(this);
             }
-			_objects[0].SetActive(false);
-			_objects[1].SetActive(false);
-			_objects[2].SetActive(false);
+			//
         }
 
         #endregion // UNTIY_MONOBEHAVIOUR_METHODS
@@ -73,7 +73,7 @@ namespace Vuforia
         {
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
-
+            //GetComponentInChildren<MediaPlayerCtrl>().Play();
 
             // Enable rendering:
             foreach (Renderer component in rendererComponents)
@@ -86,8 +86,24 @@ namespace Vuforia
             {
                 component.enabled = true;
             }
-			_objects[0].SetActive(true);
+			
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+            if (mTrackableBehaviour.TrackableName == "01enerc")
+            {
+                playvideos.numeroVideo = 0;
+                
+            }
+            if (mTrackableBehaviour.TrackableName == "02cineargentino")
+            {
+                playvideos.numeroVideo = 0;
+                
+            }
+            if (mTrackableBehaviour.TrackableName == "03inca")
+            {
+                playvideos.numeroVideo = 0;
+                ;
+            }
+            
         }
 
 
@@ -96,7 +112,7 @@ namespace Vuforia
             Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
             Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
-
+           
             // Disable rendering:
             foreach (Renderer component in rendererComponents)
             {
@@ -108,8 +124,12 @@ namespace Vuforia
             {
                 component.enabled = false;
             }
-			_objects[0].SetActive(false);
+          
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+            if (mTrackableBehaviour.TrackableName == "01enerc")
+            {
+                playvideos.numeroVideo = 1;
+            }
         }
 
         #endregion // PRIVATE_METHODS

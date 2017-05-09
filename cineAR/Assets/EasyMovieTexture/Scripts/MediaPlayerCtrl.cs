@@ -16,7 +16,7 @@ public class MediaPlayerCtrl : MonoBehaviour {
 	public bool m_bSupportRockchip = true; //Using a device support Rochchip or Low-end devices
 	//(Reason 1 : Not directly play in StreamingAssets)
 	//(Reason 2 : Video buffer is RGB565 only supported)
-	
+    public static bool timeBand;
 	public delegate void VideoEnd();
 	public delegate void VideoReady();
 	
@@ -291,8 +291,23 @@ public class MediaPlayerCtrl : MonoBehaviour {
 			}
 			
 		}
-		
+        if (!playvideos.videoPlay)
+        {
 
+            if (timeBand)
+            {
+                Call_Pause();
+                //timeBand = false;
+            }
+            if (!timeBand)
+            {
+                
+                Call_Play(0);
+                //timeBand = false;
+            }
+        }
+           
+         
 	}
 	
 	public void Resize()
