@@ -9,6 +9,7 @@ public class ShareImageCanvas : MonoBehaviour {
 	private bool isProcessing = false;
 	public Image buttonShare;
 	public string mensaje;
+	
 	//function called from a button
 	public void ButtonShare ()
 	{
@@ -17,7 +18,6 @@ public class ShareImageCanvas : MonoBehaviour {
 			StartCoroutine( ShareScreenshot() );
 		}
 	}
-
 	public IEnumerator ShareScreenshot()
 	{
 		isProcessing = true;

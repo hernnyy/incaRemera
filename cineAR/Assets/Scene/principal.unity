@@ -704,12 +704,12 @@ GameObject:
   - component: {fileID: 99}
   - component: {fileID: 81}
   m_Layer: 8
-  m_Name: VideoManager
+  m_Name: VideoManager3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &18
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,12 +1012,12 @@ GameObject:
   - component: {fileID: 111}
   - component: {fileID: 93}
   m_Layer: 8
-  m_Name: VideoManager
+  m_Name: VideoManager2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &36
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,9 +1485,9 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: d2523fa695fdc8f4f910a128bc5af8fb, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 37}
-  m_LocalRotation: {x: 0.21850806, y: -0.6724985, z: -0.6724985, w: -0.21850806}
-  m_LocalPosition: {x: -0.2, y: 0.5, z: -0.5}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalRotation: {x: 0, y: 0, z: -0.3090171, w: 0.95105654}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 62}
   - {fileID: 47}
@@ -1502,7 +1502,7 @@ Transform:
   - {fileID: 65}
   m_Father: {fileID: 53}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 270, y: 180, z: -36}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -36}
 --- !u!4 &69
 Transform:
   m_ObjectHideFlags: 0
@@ -2451,7 +2451,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657922, g: 0.4964134, b: 0.5748175, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465783, g: 0.49641263, b: 0.5748168, a: 1}
 --- !u!108 &118
 Light:
   m_ObjectHideFlags: 0
@@ -2500,7 +2500,7 @@ Animation:
   - {fileID: 7400000, guid: d2523fa695fdc8f4f910a128bc5af8fb, type: 3}
   m_WrapMode: 0
   m_PlayAutomatically: 1
-  m_AnimatePhysics: 1
+  m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!124 &120
 Behaviour:
@@ -2853,7 +2853,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 41}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a82d9a4bfbaccce4298a2b72f6a03f8c, type: 3}
   m_Name: 
@@ -2901,6 +2901,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   video1: {fileID: 22}
+  video2: {fileID: 35}
+  video3: {fileID: 17}
 --- !u!1 &359720785
 GameObject:
   m_ObjectHideFlags: 0
@@ -3053,7 +3055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &427174439
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3067,9 +3069,9 @@ RectTransform:
   m_Father: {fileID: 1227643186}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -50, y: 50}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -50, y: -130}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427174440
@@ -3083,7 +3085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b23c74e35d7e3ed46992eb331532a4c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonShare: {fileID: 0}
+  buttonShare: {fileID: 427174442}
   mensaje: 
 --- !u!114 &427174441
 MonoBehaviour:

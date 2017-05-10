@@ -90,17 +90,17 @@ namespace Vuforia
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
             if (mTrackableBehaviour.TrackableName == "01enerc")
             {
-                playvideos.numeroVideo = 0;
+				playvideos.numeroVideo = 1;
                 
             }
             if (mTrackableBehaviour.TrackableName == "02cineargentino")
             {
-                playvideos.numeroVideo = 0;
+                playvideos.numeroVideo = 2;
                 
             }
             if (mTrackableBehaviour.TrackableName == "03inca")
             {
-                playvideos.numeroVideo = 0;
+                playvideos.numeroVideo = 3;
                 ;
             }
             
@@ -126,10 +126,9 @@ namespace Vuforia
             }
           
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
-            if (mTrackableBehaviour.TrackableName == "01enerc")
-            {
-                playvideos.numeroVideo = 1;
-            }
+           
+                playvideos.numeroVideo = 0;
+            
         }
 
         #endregion // PRIVATE_METHODS
