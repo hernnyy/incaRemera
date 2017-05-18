@@ -124,9 +124,6 @@ namespace Vuforia
             {
                 component.enabled = false;
             }
-          
-            Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
-           
                 playvideos.numeroVideo = 0;
             
         }

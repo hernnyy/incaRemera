@@ -37,6 +37,16 @@ public class CameraDeviceMode : MonoBehaviour
 
 	private void SetAutofocus()
 	{
-		CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO);
+//		CameraDevice.Instance.SetFocusMode( 
+//			CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO);
+		bool focusModeSet = CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO);
+//
+		if (!focusModeSet) {
+			Debug.Log ("Failed to set focus mode FOCUS_MODE_CONTINUOUSAUTO (unsupported mode).");
+			bool triggerModeSet = CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_TRIGGERAUTO);
+			if (!triggerModeSet) {
+				Debug.Log ("Failed to set focus mode FOCUS_MODE_TRIGGERAUTO (unsupported mode).");
+			}
+		}
 	}
 }

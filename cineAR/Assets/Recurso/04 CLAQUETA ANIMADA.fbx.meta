@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d2523fa695fdc8f4f910a128bc5af8fb
-timeCreated: 1493093248
+timeCreated: 1494557096
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -175,13 +175,13 @@ ModelImporter:
         weight: 1
       - path: T_TULO_PRODUCCI_1/Mesh1
         weight: 1
-      maskType: 3
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 3
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

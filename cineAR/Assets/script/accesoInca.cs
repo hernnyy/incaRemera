@@ -1,16 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Vuforia;
-public class accesoOmega : MonoBehaviour, IVirtualButtonEventHandler {
+public class accesoInca : MonoBehaviour, IVirtualButtonEventHandler {
 
-	public string teststring;
-	// Use this for initialization
-//	void Start () {
-//
-		
-//
-//	}
-	
+	private string urlToOpen;
+	public string urlServer;
+	public string methodServer;
+	public string paramServer;
+	public string urlNoServer;
+
+	IEnumerator Start()
+	{
+		string url = urlServer+"/"+methodServer+"/"+paramServer;
+		WWW www = new WWW(url);
+		yield return www;
+		SiteCustom myObject = JsonUtility.FromJson<SiteCustom>(www.text);
+		urlToOpen = myObject.url_custom;
+	}
+
 	// Update is called once per frame
 	void Update () {
 		VirtualButtonBehaviour[] vbs = GetComponentsInChildren<VirtualButtonBehaviour>();
@@ -19,26 +26,22 @@ public class accesoOmega : MonoBehaviour, IVirtualButtonEventHandler {
 			vbs[i].RegisterEventHandler(this);
 		}
 	}
-	IEnumerator Start()
-	{
-		string url = "http://ikaroira.com/ws/ws-user.php/getFanPage";
-		WWW www = new WWW(url);
-		yield return www;
-		teststring = www.text;
-	}
+
 	public void OnButtonPressed(VirtualButtonAbstractBehaviour vb) {
-		
-		// si se presiona el boton virtual quebrada
 
 
-		if (vb.VirtualButtonName == "VirtualOmega") {
-			
-//			Application.OpenURL("https://www.facebook.com/events/558981187604216/");
-			Application.OpenURL(teststring);
+			Application.OpenURL(urlToOpen);
 
-		}
 		
 	}
 	public void OnButtonReleased(VirtualButtonAbstractBehaviour vb) { 
+	}
+
+	public class SiteCustom
+	{
+		public bool status;
+		public int code;
+		public string url_custom;
+		public string message;
 	}
 }
